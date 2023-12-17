@@ -1,0 +1,93 @@
+h2 {
+    font-weight: 300;
+    text-align: center;
+}
+p {
+    position: relative;
+}
+#login-form-wrap {
+    width: 35%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+    border-radius: 4px;
+    box-shadow: 0px 30px 50px 0px rgba(216, 123, 123, 0.838);
+}
+#login-from {
+    padding: 0 60px;
+}
+input {
+ display: block;
+ box-sizing: border-box;
+ width: 100%;
+ outline: none;
+ height: 60px;
+ line-height: 60px;
+ border-radius: 4px;
+}
+input[type="text"],
+input[type="emali"] {
+    width: 100%;
+    padding: 0 0 0 10px;
+    margin: 0;
+    color: #8a8a8a;
+    border: 1px solid #c2c0ca;
+    font-style: normal;
+    font-size: 16px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #3ca9e2
+}
+input[type="text"]:focus:invalid,
+input[type="email"]:focus:invalid {
+    color: #cc1e2b;
+    border-color:#cc1e2b;
+}
+input[type="text"]:valid ~ .validation,
+input[type="emali"]:valid ~ .validation{
+    display: block;
+    border-color: #0c0;
+}
+input[type="text"]:valid ~ .validation span,
+input[type="emali"]:valid ~ .validation span {
+    background: #0c0;
+    position:absolute;
+    border-radius: 6px;
+}
+input[type="text"]:valid ~ .validation span:first-child,
+input[type="emali"]:valid ~ .validation span:first-child {
+    top: 30px;
+    left: 14px;
+    width: 20px;
+    height: 3px;   
+}
+input[type="text"]:valid ~ .validation span:first-child,
+input[type="emali"]:valid ~ .validation span:first-child {
+    top: 30px;
+    left: 14px;
+    width: 20px;
+    height: 3px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);  
+}
+input[type="submit"] {
+    border:none;
+    display: block;
+    background-color: #151616;
+    color:#fff;
+    text-transform:uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+input[type="submit"]:hover {
+    background-color: #329dd5;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
